@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+  <test name="smoke">
+    <classes>
+      <class name="MyPkg.TestClass3"/>
+      <class name="MyPkg.TestClass2"/>
+     <!--   <class name="MyPkg.TestClass1"/>  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
