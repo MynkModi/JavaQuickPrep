@@ -49,8 +49,8 @@ public class ArrayDemo {
 		 
 		 
 		 //printing the arry
-		 System.out.println("Printing: "+myClonedArry.toString());
-		 System.out.println("Printing2: "+myMultiDimnArray1.toString());
+		 System.out.println("Printing: "+Arrays.toString(myClonedArry));
+		 System.out.println("Printing2: "+Arrays.deepToString(myMultiDimnArray1));
 		 //*******************************************************************
 		 //Q-Java Program to print the largest element in an array
 		 int myArray5[]={78,103,18,91,88};
