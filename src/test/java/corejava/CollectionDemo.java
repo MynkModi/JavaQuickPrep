@@ -1,13 +1,30 @@
 package corejava;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+//import java.util.List;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeSet;
+import java.util.Vector;
+
 
 public class CollectionDemo {
       public static void main(String[] args) { 
     	  methodListInterfaceDemo();
     	  methodQueueInterfaceDemo();
     	  methodSetInterfaceDemo();
-    	  methodMapInterfaceDemo();
+    	  methodHshMapInterfaceDemo();
+    	  methodHshTableInterfaceDemo();
 
       }//end of main
       
@@ -25,6 +42,7 @@ public class CollectionDemo {
           
           ArrayList<String> myArrList=new ArrayList<String>();
           LinkedList<String> myLnkdList= new LinkedList<String>();
+          //java.util.LinkedList<String> myLnkdList= new java.util.LinkedList<String>();
           Vector<String> myVctr= new Vector<String>();
           Stack<String> myStack=new Stack<String>();
 
@@ -157,7 +175,7 @@ public class CollectionDemo {
       }
       
       //4
-      public static void methodMapInterfaceDemo(){
+      public static void methodHshMapInterfaceDemo(){
     	  Map<Integer,String> myHshMp=new HashMap<Integer,String>();
     	  myHshMp.put(100, "Hsmp1");
     	  myHshMp.put(200, "Hsmp2");
@@ -192,12 +210,23 @@ public class CollectionDemo {
     	  
     	  //3-traversing the keys and values (lambda function works only on java 8 and above)
     	  System.out.println("\n third way to traverse keys and values");
-    	  myHshMp.forEach((k, v)-> System.out.println(k + " : "+ (v )));
+    	  myHshMp.forEach((k, v)-> System.out.println(k + " : "+ v));
     	  
     	 // Printing all elements of above HashMap
           System.out.println("\n Created hashmap is" + myHshMp);
-          
-          
+               
+      }
+      
+      
+      public static void methodHshTableInterfaceDemo() {
+    	  Map<Integer, String> myHshTable=new Hashtable<Integer, String>();
+    	  myHshTable.put(111, "Hstb11");
+    	  myHshTable.put(112, "Hstb12");
+    	  myHshTable.put(113, "Hstb13");
+    	  
+    	//traversing the keys and values (lambda function works only on java 8 and above)
+    	  myHshTable.forEach((k,v)-> System.out.println(k+" " +v));	  
+    	  
       }
  
 }//end of class
