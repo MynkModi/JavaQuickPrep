@@ -9,6 +9,8 @@ public class EnumDemo {
 		EDGE,CHROME,FIREFOX,IE; };
 		
 	//private static BrowserType myBrowser;
+	//system.out.println(BrowserType.)
+	
 		
 	private static String getDetailsOfBrowser(BrowserType myBrowser) {
 			  switch (myBrowser){ 

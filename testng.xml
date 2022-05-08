@@ -7,20 +7,21 @@
       <class name="testng.TestClass2"/>
       <class name="testng.TestClass1"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
    <test name="sanity">
     <classes>
       <class name="testng.TestClass3"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  <test name="junit">
+    <classes>
+      <class name="junit.TestLogic"/>
+    </classes>
+  </test> 
    <test name="log4j">
     <classes>
       <class name="log4j.Log4jDemo"/>
     </classes>
-  </test> <!-- Test -->
-   <test name="junit">
-    <classes>
-      <class name="junit.TestLogic"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+
+</suite> 

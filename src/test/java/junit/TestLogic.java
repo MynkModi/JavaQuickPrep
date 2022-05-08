@@ -37,12 +37,14 @@ public void testFindMax(){
     System.out.println("test case find max");  
     assertEquals(4,Logic.findMax(new int[]{1,3,4,2}));  
     assertEquals(-2,Logic.findMax(new int[]{-12,-3,-4,-2}));  
-}  
+} 
+
 @Test  
 public void testCube(){  
     System.out.println("test case cube");  
     assertEquals(27,Logic.cube(3));  
 }  
+
 @Ignore  
 public void testReverseWord(){  
     System.out.println("test case reverse word");  

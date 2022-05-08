@@ -51,7 +51,7 @@
               	<name>testnames</name> 
               	<!-- IMP point  -->
               	<!--  <value>regression,sanity</value> -->
-             	<value>log4j</value>
+             	<value>junit</value>
             	</property>
             	</properties>
           </configuration>

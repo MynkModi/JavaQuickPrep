@@ -87,6 +87,9 @@ public class StringDemo {
 		
 		//Q-remove a particular character from a string
 		rmvStrChar("this is my book",7);
+		
+		//Q-count occurrences of letter from string
+		countOccurrence("count occurance");
 	}//main
 	
 	private static void strReverse(String str1){
@@ -158,5 +161,25 @@ public class StringDemo {
 		System.out.println(+n+"th char removed from:"+str1);
 	}
 	
+	
+	private static void countOccurrence(String str1){
+		str1=str1.replaceAll("\\s+",""); //remove space character from middle as well
+		char[] chArr1=str1.toCharArray(); 
+		//Character[] chArr1=str1.toCharArray();  - compilation error 
+		int counter=1;
+		Arrays.sort(chArr1);
+		System.out.println("Total chatracters: "+chArr1.length);
+		//for (char c:chArr1) {
+		for (int i=0;i<chArr1.length;i++){
+				if ( (i!=(chArr1.length-1)) && (chArr1[i]==chArr1[i+1]) ) {
+					counter++;
+				}
+				else {
+					System.out.println("Char/NoOfOccurrence: "+chArr1[i]+"="+counter);
+					counter=1; //reset counter to 1
+				}
+			
+		}
+	}
 }//class
 
